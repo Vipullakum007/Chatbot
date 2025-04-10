@@ -1,0 +1,38 @@
+# 🔙 Python/Flask - backend
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.env
+venv/
+env/
+instance/
+*.h5
+*.pkl
+
+# pip environment
+pip-log.txt
+pip-delete-this-directory.txt
+
+# vscode
+.vscode/
+
+# 🧠 Jupyter
+.ipynb_checkpoints/
+
+# 🔮 Node - frontend
+frontend/node_modules/
+frontend/.env
+frontend/dist/
+
+# logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# 🚀 Vite build output (optional)
+frontend/build/

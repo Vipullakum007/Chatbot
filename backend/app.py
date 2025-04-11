@@ -105,5 +105,10 @@ def query_chatbot(sentence):
     json_res = jsonify({'top' : { 'response': response}}) 
 
     return json_res
-app.run()       
+
+
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)      
 

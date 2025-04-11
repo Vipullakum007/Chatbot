@@ -6,6 +6,7 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
+from flask_cors import CORS
 
 from tensorflow.keras.models import load_model
 model = load_model('chatbot_model.h5')
@@ -20,6 +21,8 @@ from flask_ngrok import run_with_ngrok
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
+CORS(app, resources={r"/query/*": {"origins": "http://localhost:5173"}})
 
 # run_with_ngrok(app)  # Start ngrok when app is run
 
